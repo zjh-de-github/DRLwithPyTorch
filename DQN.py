@@ -187,6 +187,7 @@ for i_episodes in range(num_episodes):
         if done:
             episode_durations.append(t + 1)
             plot_durations()
+            # 可视化
             gif_path = f'./GIF/CartPole-v1/episodes_{i_episodes}.gif'
             # display_frames_as_gif(frames=frames, id = i_episodes)
             imageio.mimsave(gif_path, frames)
